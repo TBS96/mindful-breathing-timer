@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+.timer{
+    font-size: 200px;
+    margin-bottom: 20px;
+}
+
+.input-area{
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 10px 10px 10px 5px tomato;
+}
+
+.input-area:placeholder{
+    padding: 0;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: aqua;
+    border: none;
+}
+
+
+
+/* Responsive code starts */
+
+/* For small screens (up to 768px) */
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: pink;
+        color: tomato;
+    }
+
+    .timer {
+        font-size: 100px;
+        margin-bottom: 10px;
+    }
+
+    .input-area{
+        border: none;
+        padding: 10px 20px;
+        box-shadow: -10px -10px 10px 5px blue;
+    }
+
+    button {
+        padding: 8px 106px;
+        font-size: 14px;
+        margin: 13px;
+        display: block;
+    }
+}
+
+/* For medium screens (768px - 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body{
+        background-color: gray;
+        color: yellow;
+    }
+    .timer {
+        font-size: 150px;
+        margin-bottom: 15px;
+    }
+
+    .input-area{
+        border: none;
+        padding: 10px 20px;
+        box-shadow: 10px 10px 10px 5px rgb(238, 4, 179);
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 5px;
+    }
+}
+
+/* For large screens (992px and above) */
+@media only screen and (min-width: 993px) {
+    .timer {
+        font-size: 200px;
+        margin-bottom: 20px;
+    }
+
+    .input-area{
+        border: none;
+        padding: 10px 20px;
+        box-shadow: 20px 20px 50px 55px fuchsia;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+    }
+}
